@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="common-api" />
+        <module name="eureka-server" />
+        <module name="proovider-notice-8006" />
+        <module name="provider-leacot-8005" />
+        <module name="provider-user-8002" />
+        <module name="provider-label-8004" />
+        <module name="provider-article-8003" />
+        <module name="provider-exam-8001" />
+        <module name="consumer-exam-8080" />
+        <module name="provider-topic-8008" />
+      </profile>
+      <profile name="Annotation profile for SpringCloud-Exam-Project" enabled="true">
+        <sourceOutputDir name="../provider-pgtest-8807/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../provider-pgtest-8807/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="provider-pgtest-8007" />
+      </profile>
+      <profile name="Annotation profile for provider-login-8009" enabled="true">
+        <sourceOutputDir name="../provider-login-8080/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../provider-login-8080/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="provider-login-8009" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="provider-exam" target="1.8" />
+      <module name="provider-leacot-8005" target="1.8" />
+      <module name="provider-login-8009" target="1.8" />
+      <module name="provider-pgtest-8007" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
