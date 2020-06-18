@@ -3,7 +3,6 @@ package cn.edu.lingnan.exam.controller.login;
 import cn.edu.lingnan.exam.common.LoginSession;
 import cn.edu.lingnan.exam.entity.User;
 import cn.edu.lingnan.exam.service.UserService;
-import com.google.code.kaptcha.Producer;
 import org.apache.tomcat.util.http.fileupload.ByteArrayOutputStream;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

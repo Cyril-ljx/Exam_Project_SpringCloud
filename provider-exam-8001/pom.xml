@@ -49,11 +49,18 @@
             <artifactId>easyexcel</artifactId>
         </dependency>
 
+        <!--验证码框架-->
+        <dependency>
+            <groupId>com.github.penggle</groupId>
+            <artifactId>kaptcha</artifactId>
+        </dependency>
+
         <!--引入分页-->
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper-spring-boot-starter</artifactId>
         </dependency>
+
     </dependencies>
 
 </project>

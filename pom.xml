@@ -17,7 +17,6 @@
         <module>proovider-notice-8006</module>
         <module>provider-leacot-8005</module>
         <module>provider-topic-8008</module>
-        <module>provider-login-8080</module>
         <module>consumer-exam-8080</module>
         <module>eureka-server</module>
 
@@ -46,6 +45,7 @@
         <easyexcel.servion>2.2.3</easyexcel.servion>
         <fastjson-version>1.2.55</fastjson-version>
         <pagehelper-version>1.2.3</pagehelper-version>
+        <kaptcha-version>3.3.2</kaptcha-version>
     </properties>
 
     <!--  依赖管理-->
@@ -132,6 +132,13 @@
                 <groupId>com.github.pagehelper</groupId>
                 <artifactId>pagehelper-spring-boot-starter</artifactId>
                 <version>${pagehelper-version}</version>
+            </dependency>
+
+            <!--验证码框架-->
+            <dependency>
+                <groupId>com.github.penggle</groupId>
+                <artifactId>kaptcha</artifactId>
+                <version>${kaptcha-version}</version>
             </dependency>
 
 
