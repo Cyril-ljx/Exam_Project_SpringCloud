@@ -1,7 +1,7 @@
 package cn.edu.lingnan.exam.config;
 
 
-import cn.edu.lingnan.exam.controller.login.CheckLoginInterceptor;
+import cn.edu.lingnan.exam.admin.controller.login.CheckLoginInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
