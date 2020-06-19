@@ -5,10 +5,12 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/common-api/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/provider-exam-8001/pom.xml" />
         <option value="$PROJECT_DIR$/provider-exam/pom.xml" />
         <option value="$PROJECT_DIR$/provider-leacot-8005/pom.xml" />
       </set>
