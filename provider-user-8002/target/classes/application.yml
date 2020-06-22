@@ -1,0 +1,30 @@
+server:
+  port: 8002
+
+spring:
+  application:
+    name: provider-user-8002
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/exam?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}-${server.port}
+  client:
+    register-with-eureka: true #注册到Eureka的注册中⼼
+    fetch-registry: true #获取注册实例列表
+    service-url:
+      defaultZone: http://localhost:7001/eureka/  #配置注册中⼼地址
+
+info:
+  remark: 这是爹的代码
+  author: water
+

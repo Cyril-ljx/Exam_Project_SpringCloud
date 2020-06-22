@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.lingnan.exam.dao.NoticeDao">
+
+    <resultMap type="cn.edu.lingnan.exam.entity.Notice" id="NoticeMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="title" column="title" jdbcType="VARCHAR"/>
+        <result property="content" column="content" jdbcType="VARCHAR"/>
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+        <result property="userOp" column="user_op" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="NoticeMap">
+        select
+          id, title, content, create_time, user_op
+        from exam.notice
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="NoticeMap">
+        select
+          id, title, content, create_time, user_op
+        from exam.notice
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="NoticeMap">
+        select
+          id, title, content, create_time, user_op
+        from exam.notice
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into exam.notice(title, content, create_time, user_op)
+        values (#{title}, #{content}, #{createTime}, #{userOp})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update exam.notice
+        <set>
+            <if test="title != null and title != ''">
+                title = #{title},
+            </if>
+            <if test="content != null and content != ''">
+                content = #{content},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime},
+            </if>
+            <if test="userOp != null and userOp != ''">
+                user_op = #{userOp},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from exam.notice where id = #{id}
+    </delete>
+    <select id="count" resultType="_int">
+   select
+          count(*)
+        from exam.notice
+    </select>
+    <select id="selectByKeyWord" resultMap="NoticeMap">
+        select id, title, content, create_time, user_op
+        from exam.notice
+        <where>
+
+            <if test="keyword1 !=null and keyword1 != '' and keyword1 !='undefined' ">
+                and title like concat('%',#{keyword1},'%')
+            </if>
+            <if test="keyword2 !=null and keyword2 != '' and keyword2 !='undefined' ">
+               and user_op like concat('%',#{keyword2},'%')
+            </if>
+        </where>
+    </select>
+
+</mapper>

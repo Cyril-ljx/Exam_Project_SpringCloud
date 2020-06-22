@@ -2,7 +2,392 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cf638d1-2e31-4bb8-bf8d-eb7a9e24ea89" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d11b8c51-3a31-45a6-af74-94b841f16364.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d11b8c51-3a31-45a6-af74-94b841f16364/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-api/target/classes/cn/edu/lingnan/exam/common/LoginSession.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-api/target/classes/cn/edu/lingnan/exam/common/ServerLayResult.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-api/target/classes/cn/edu/lingnan/exam/entity/Article.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-api/target/classes/cn/edu/lingnan/exam/entity/CommonResult.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-api/target/classes/cn/edu/lingnan/exam/entity/Label.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-api/target/classes/cn/edu/lingnan/exam/entity/Leacot.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-api/target/classes/cn/edu/lingnan/exam/entity/Notice.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-api/target/classes/cn/edu/lingnan/exam/entity/Pgtest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-api/target/classes/cn/edu/lingnan/exam/entity/Reply.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-api/target/classes/cn/edu/lingnan/exam/entity/Topic.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-api/target/classes/cn/edu/lingnan/exam/entity/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-api/target/classes/cn/edu/lingnan/exam/exception/GlobalException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-api/target/classes/cn/edu/lingnan/exam/service/LoginFeignService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-api/target/classes/cn/edu/lingnan/exam/service/PgtestFeignService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-api/target/classes/cn/edu/lingnan/exam/service/UserFeignService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-api/target/classes/cn/edu/lingnan/exam/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-api/target/classes/cn/edu/lingnan/exam/util/MD5Util.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-api/target/common-api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-api/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/cn/edu/lingnan/exam/ExamConsumerApp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/cn/edu/lingnan/exam/config/KaptchaConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/cn/edu/lingnan/exam/controller/admin/ConsoleController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/cn/edu/lingnan/exam/controller/admin/PgtestConsumerFeignController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/cn/edu/lingnan/exam/controller/admin/UserConsumerFeignController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/cn/edu/lingnan/exam/controller/client/ClientIndexController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/cn/edu/lingnan/exam/controller/login/LoginController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/image/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/css/layui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/css/layui.mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/css/modules/code.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/css/modules/laydate/default/font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/css/modules/layer/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/css/modules/layer/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/css/modules/layim/html/chatlog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/css/modules/layim/html/find.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/css/modules/layim/html/getmsg.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/css/modules/layim/html/msgbox.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/css/modules/layim/layim.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/css/modules/layim/mobile/layim.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/css/modules/layim/skin/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/css/modules/layim/skin/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/css/modules/layim/skin/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/css/modules/layim/skin/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/css/modules/layim/skin/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/css/modules/layim/skin/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/css/modules/layim/voice/default.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/font/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/font/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/font/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/17.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/18.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/19.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/20.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/21.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/22.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/23.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/25.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/26.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/27.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/28.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/29.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/30.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/31.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/32.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/33.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/34.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/35.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/36.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/37.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/38.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/39.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/40.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/41.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/42.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/43.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/44.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/45.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/46.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/47.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/48.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/49.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/50.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/51.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/52.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/53.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/54.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/55.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/56.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/57.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/58.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/59.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/60.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/61.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/62.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/63.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/64.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/65.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/66.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/67.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/68.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/69.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/70.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/71.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/images/face/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/lay/all-mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/lay/all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/lay/modules/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/lay/modules/code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/lay/modules/colorpicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/lay/modules/element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/lay/modules/flow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/lay/modules/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/lay/modules/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/lay/modules/laydate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/lay/modules/layedit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/lay/modules/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/lay/modules/layim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/lay/modules/laypage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/lay/modules/laytpl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/lay/modules/mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/lay/modules/mobile/layer-mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/lay/modules/mobile/layim-mobile-open.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/lay/modules/mobile/layim-mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/lay/modules/mobile/upload-mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/lay/modules/mobile/zepto.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/lay/modules/rate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/lay/modules/slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/lay/modules/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/lay/modules/tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/lay/modules/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/lay/modules/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/layui.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/layui/layui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/lib/admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/lib/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/lib/view.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/modules/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/modules/set.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/modules/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/modules/useradmin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/style/admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/style/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/style/res/bg-none.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/style/res/layui-logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/style/res/logo-black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/style/res/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/style/res/template/character.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/style/res/template/huge.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/style/res/template/portrait.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/layuiadmin/style/template.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/img/banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/img/down_img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/img/erweima.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/img/gr_img2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/img/gr_img3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/img/gr_img4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/img/gr_img5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/img/header.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/img/header2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/img/jiantou.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/img/lianxi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/img/liuyan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/img/sy_img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/img/sy_img2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/img/sy_img3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/img/sy_img4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/img/sy_img5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/img/wy_img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/img/wy_img2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/img/wy_img3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/img/wy_img4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/img/wy_img5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/img/wz_img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/img/xc_img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/img/xc_img3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/img/xc_img4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/img/xc_img5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/js/util/menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/js/util/mm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/css/layui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/css/layui.mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/css/modules/code.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/css/modules/layer/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/css/modules/layer/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/font/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/font/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/font/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/17.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/18.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/19.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/20.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/21.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/22.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/23.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/25.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/26.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/27.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/28.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/29.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/30.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/31.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/32.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/33.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/34.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/35.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/36.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/37.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/38.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/39.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/40.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/41.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/42.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/43.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/44.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/45.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/46.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/47.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/48.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/49.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/50.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/51.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/52.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/53.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/54.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/55.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/56.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/57.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/58.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/59.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/60.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/61.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/62.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/63.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/64.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/65.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/66.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/67.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/68.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/69.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/70.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/71.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/images/face/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/lay/modules/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/lay/modules/code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/lay/modules/colorpicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/lay/modules/element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/lay/modules/flow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/lay/modules/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/lay/modules/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/lay/modules/laydate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/lay/modules/layedit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/lay/modules/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/lay/modules/laypage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/lay/modules/laytpl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/lay/modules/mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/lay/modules/rate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/lay/modules/slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/lay/modules/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/lay/modules/tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/lay/modules/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/lay/modules/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/layui.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/res/layui/layui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/static/说明.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/templates/views/admin/article/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/templates/views/admin/article/listform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/templates/views/admin/home/console.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/templates/views/admin/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/templates/views/admin/leacots/leacotsList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/templates/views/admin/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/templates/views/admin/notice/noticeAdd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/templates/views/admin/notice/noticeList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/templates/views/admin/system/pwdUpdate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/templates/views/admin/topic/pgtestList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/templates/views/admin/topic/topicList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/templates/views/admin/user/userList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/templates/views/admin/user/userRegister.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/templates/views/client/html/article.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/templates/views/client/html/articleDetails.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/templates/views/client/html/commons/bar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/templates/views/client/html/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/templates/views/client/html/leacots.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/templates/views/client/html/notice.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/templates/views/client/html/noticeDetails.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/templates/views/client/html/pgtest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/templates/views/client/html/userinfo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/templates/views/client/说明.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/templates/views/说明.text" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-exam-8080/target/classes/templates/说明.text" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/target/classes/cn/edu/lingnan/EurekaServerApp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-article-8003/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-article-8003/target/classes/cn/edu/lingnan/exam/controller/admin/ArticleController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-article-8003/target/classes/cn/edu/lingnan/exam/controller/client/ClientArticleController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-article-8003/target/classes/cn/edu/lingnan/exam/dao/ArticleDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-article-8003/target/classes/cn/edu/lingnan/exam/service/ArticleService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-article-8003/target/classes/cn/edu/lingnan/exam/service/ArticleServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-article-8003/target/classes/mapper/ArticleDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-label-8004/target/classes/cn/edu/lingnan/exam/controller/admin/AdminController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-login-8009/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-login-8009/target/classes/cn/edu/lingnan/exam/LoginProviderApp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-login-8009/target/classes/cn/edu/lingnan/exam/controller/CheckLoginInterceptor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-login-8009/target/classes/cn/edu/lingnan/exam/controller/LoginController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-login-8009/target/classes/cn/edu/lingnan/exam/dao/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-login-8009/target/classes/cn/edu/lingnan/exam/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-login-8009/target/classes/cn/edu/lingnan/exam/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-login-8009/target/classes/mapper/ArticleDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-login-8009/target/classes/mapper/LabelDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-login-8009/target/classes/mapper/LeacotDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-login-8009/target/classes/mapper/NoticeDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-login-8009/target/classes/mapper/PgtestDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-login-8009/target/classes/mapper/ReplyDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-login-8009/target/classes/mapper/TopicDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-login-8009/target/classes/mapper/UserDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-notice-8006/target/classes/cn/edu/lingnan/exam/controller/admin/AdminController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-pgtest8010/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-pgtest8010/target/classes/cn/edu/lingnan/exam/PgtestProviderApp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-pgtest8010/target/classes/cn/edu/lingnan/exam/controller/PgtestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-pgtest8010/target/classes/cn/edu/lingnan/exam/dao/PgtestDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-pgtest8010/target/classes/cn/edu/lingnan/exam/service/PgtestService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-pgtest8010/target/classes/cn/edu/lingnan/exam/service/impl/PgtestServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-pgtest8010/target/classes/mapper/PgtestDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-user-8002/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-user-8002/target/classes/cn/edu/lingnan/exam/UserProviderApp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-user-8002/target/classes/cn/edu/lingnan/exam/controller/admin/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-user-8002/target/classes/cn/edu/lingnan/exam/dao/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-user-8002/target/classes/cn/edu/lingnan/exam/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-user-8002/target/classes/cn/edu/lingnan/exam/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-user-8002/target/classes/mapper/UserDao.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,10 +657,22 @@
       <workItem from="1592753380155" duration="5924000" />
       <workItem from="1592786095965" duration="4227000" />
     </task>
+    <task id="LOCAL-00001" summary="项目分支">
+      <created>1592794879511</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592794879511</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="项目分支" />
+    <option name="LAST_COMMIT_MESSAGE" value="项目分支" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="31" key="#Notifications" timestamp="1592588107997">
@@ -304,10 +701,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="499" y="167" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1592581225547" />
-    <state x="259" y="0" key="CommitChangelistDialog2" timestamp="1592794840134">
+    <state x="259" y="0" key="CommitChangelistDialog2" timestamp="1592794878023">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="259" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1592794840134" />
+    <state x="259" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1592794878023" />
     <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1592756221656">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -393,6 +790,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1592553542304" />
+    <state x="350" y="171" key="git4idea.merge.GitPullDialog" timestamp="1592794901126">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="350" y="171" key="git4idea.merge.GitPullDialog/0.0.1366.738@0.0.1366.738" timestamp="1592794901126" />
     <state x="115" y="112" key="new project wizard" timestamp="1592619054201">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
