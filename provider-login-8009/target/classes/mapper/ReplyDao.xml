@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.lingnan.ReplyDao">
+
+    <resultMap type="cn.edu.lingnan.exam.entity.Reply" id="ReplyMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="replyContent" column="reply_content" jdbcType="VARCHAR"/>
+        <result property="replyTime" column="reply_time" jdbcType="TIMESTAMP"/>
+        <result property="replyUser" column="reply_user" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="ReplyMap">
+        select
+          id, reply_content, reply_time, reply_user
+        from exam.reply
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="ReplyMap">
+        select
+          id, reply_content, reply_time, reply_user
+        from exam.reply
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="ReplyMap">
+        select
+          id, reply_content, reply_time, reply_user
+        from exam.reply
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="replyContent != null and replyContent != ''">
+                and reply_content = #{replyContent}
+            </if>
+            <if test="replyTime != null">
+                and reply_time = #{replyTime}
+            </if>
+            <if test="replyUser != null and replyUser != ''">
+                and reply_user = #{replyUser}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into exam.reply(reply_content, reply_time, reply_user)
+        values (#{replyContent}, #{replyTime}, #{replyUser})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update exam.reply
+        <set>
+            <if test="replyContent != null and replyContent != ''">
+                reply_content = #{replyContent},
+            </if>
+            <if test="replyTime != null">
+                reply_time = #{replyTime},
+            </if>
+            <if test="replyUser != null and replyUser != ''">
+                reply_user = #{replyUser},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from exam.reply where id = #{id}
+    </delete>
+
+    <delete id="deleteByPrimaryKey">
+    delete from reply
+    where id = #{id}
+  </delete>
+
+    <update id="updateByPrimaryKey">
+    update reply
+    set reply_content = #{replyContent},
+      reply_time = #{replyTime},
+      reply_user = #{replyUser}
+    where id = #{id}
+    </update>
+
+</mapper>

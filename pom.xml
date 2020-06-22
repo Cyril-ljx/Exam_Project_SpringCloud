@@ -9,16 +9,15 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>common-api</module>
-        <module>provider-exam-8001</module>
         <module>provider-user-8002</module>
         <module>provider-article-8003</module>
         <module>provider-label-8004</module>
-        <module>provider-leacot-8005</module>
-        <module>proovider-notice-8006</module>
-        <module>provider-leacot-8005</module>
+        <module>provider-notice-8006</module>
         <module>provider-topic-8008</module>
         <module>consumer-exam-8080</module>
         <module>eureka-server</module>
+        <module>provider-login-8009</module>
+        <module>provider-leacots-8005</module>
 
     </modules>
 
@@ -45,7 +44,8 @@
         <easyexcel.servion>2.2.3</easyexcel.servion>
         <fastjson-version>1.2.55</fastjson-version>
         <pagehelper-version>1.2.3</pagehelper-version>
-        <kaptcha-version>3.3.2</kaptcha-version>
+        <druid-version>1.1.10</druid-version>
+
     </properties>
 
     <!--  依赖管理-->
@@ -127,6 +127,14 @@
                 <version>${fastjson-version}</version>
             </dependency>
 
+            <!--验证码框架-->
+            <dependency>
+                <groupId>com.github.penggle</groupId>
+                <artifactId>kaptcha</artifactId>
+                <version>2.3.2</version>
+            </dependency>
+
+
             <!--引入分页-->
             <dependency>
                 <groupId>com.github.pagehelper</groupId>
@@ -134,12 +142,13 @@
                 <version>${pagehelper-version}</version>
             </dependency>
 
-            <!--验证码框架-->
+<!--            数据库连接池-->
             <dependency>
-                <groupId>com.github.penggle</groupId>
-                <artifactId>kaptcha</artifactId>
-                <version>${kaptcha-version}</version>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid-version}</version>
             </dependency>
+
 
 
         </dependencies>

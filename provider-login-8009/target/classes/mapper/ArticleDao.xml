@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.lingnan.exam.dao.ArticleDao">
+
+    <resultMap type="cn.edu.lingnan.exam.entity.Article" id="ArticleMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="title" column="title" jdbcType="VARCHAR"/>
+        <result property="content" column="content" jdbcType="VARCHAR"/>
+        <result property="author" column="author" jdbcType="VARCHAR"/>
+        <result property="status" column="status" jdbcType="INTEGER"/>
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+        <association property="label" javaType="cn.edu.lingnan.exam.entity.Label">
+            <id property="id" column="id"/>
+            <result property="labelName" column="label_name"/>
+        </association>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="ArticleMap">
+        select
+          id, label, title, content, author, status, create_time
+        from exam.article
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="ArticleMap">
+        select
+          id, label, title, content, author, status, create_time
+        from exam.article
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="ArticleMap">
+        select
+          id, label, title, content, author, status, create_time
+        from exam.article
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="label != null">
+                and label = #{label}
+            </if>
+            <if test="title != null and title != ''">
+                and title = #{title}
+            </if>
+            <if test="content != null and content != ''">
+                and content = #{content}
+            </if>
+            <if test="author != null and author != ''">
+                and author = #{author}
+            </if>
+            <if test="status != null">
+                and status = #{status}
+            </if>
+            <if test="createTime != null">
+                and create_time = #{createTime}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into exam.article(label, title, content, author, status, create_time)
+        values (#{label.id}, #{title}, #{content}, #{author}, #{status}, #{createTime})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update exam.article
+        <set>
+            <if test="label != null">
+                label = #{label},
+            </if>
+            <if test="title != null and title != ''">
+                title = #{title},
+            </if>
+            <if test="content != null and content != ''">
+                content = #{content},
+            </if>
+            <if test="author != null and author != ''">
+                author = #{author},
+            </if>
+            <if test="status != null">
+                status = #{status},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from exam.article where id = #{id}
+    </delete>
+
+    <select id="selectAll" resultMap="ArticleMap">
+       SELECT
+        a.id,
+        l.id AS label,
+        a.title,
+        a.content,
+        a.author,
+        a.`status`,
+        a.create_time,
+        l.label_name
+    FROM
+        article a
+        JOIN label l ON a.label = l.id
+  </select>
+    <select id="selectByPrimaryKey" resultMap="ArticleMap">
+       SELECT
+        a.id,
+        l.id AS label,
+        a.title,
+        a.content,
+        a.author,
+        a.`status`,
+        a.create_time,
+        l.label_name
+    FROM
+        article a
+        JOIN label l ON a.label = l.id
+        where a.id = #{id}
+  </select>
+    <select id="selectByKeyWord" resultMap="ArticleMap">
+        SELECT
+        a.id,
+        l.id AS label,
+        a.title,
+        a.content,
+        a.author,
+        a.`status`,
+        a.create_time,
+        l.label_name
+        FROM
+        article a
+        JOIN label l ON a.label = l.id
+        <where>
+            <!-- 模糊查询 -->
+            <if test="keyword1 !=null and keyword1 != '' and keyword1 !='undefined' ">
+                a.id=#{keyword1}
+            </if>
+            <if test="keyword2 !=null and keyword2 != '' and keyword2 !='undefined' ">
+                AND a.content=#{keyword2}
+            </if>
+            <if test="keyword3 !=null and keyword3 != '' and keyword3 !='undefined' ">
+                AND a.title=#{keyword2}
+            </if>
+        </where>
+    </select>
+    <select id="count" resultType="int">
+      select  count(*) from article
+    </select>
+    <delete id="deleteByPrimaryKey">
+    delete from exam.article
+    where id = #{id}
+    </delete>
+<!--    根据文章id进行更新-->
+    <update id="updateByPrimaryKey">
+    update exam.article
+    set label = #{label.id},
+      title = #{title},
+      content = #{content},
+      author = #{author},
+      status = #{status},
+      create_time = #{createTime}
+    where id = #{id}
+  </update>
+
+</mapper>
