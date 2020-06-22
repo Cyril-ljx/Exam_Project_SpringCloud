@@ -1,45 +1,19 @@
 #两个不同配置文件是操作不同的数据库
 #指定服务的端口号
 server:
-  port: 8009
+  port: 8001
 
 #数据库连接
 #先是要导入一个mysql的依赖
-
 spring:
-  thymeleaf:
-    prefix: classpath:/templates/views/
-    #禁用缓存，以后修改静态页面的代码，就可以直接crt+F9用，不用重新部署
-    cache: false
-    #    配置应用项目名(服务名称)
-  application:
-    name: provider-login
   datasource:
     username: root
     password: root
     url: jdbc:mysql://localhost:3306/exam?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC&allowMultiQueries=true
     driver-class-name: com.mysql.jdbc.Driver
-    type: com.alibaba.druid.pool.DruidDataSource
-    druid:
-      initial-size: 5
-      min-idle: 5
-      max-active: 20
-      max-wait: 60000
-      time-between-eviction-runs-millis: 60000
-      min-evictable-idle-time-millis: 300000
-      validation-query: SELECT 1 FROM DUAL
-      test-on-borrow: false
-      test-while-idle: true
-      test-on-return: false
-      pool-prepared-statements: true
-      filter: stat,wall,log4j
-      max-pool-prepared-statement-per-connection-size: 20
-      use-global-data-source-stat: true
-      connect-properties: druid.stat.mergeSql =true;druid.stat.slowSqlMillis=5000
-
-  jackson:
-    date-format: yyyy/MM/dd HH:mm:ss
-
+  #    配置应用项目名(服务名称)
+  application:
+    name: provider-admin
 
 #这是配置xml文件的路径
 mybatis:
@@ -47,6 +21,8 @@ mybatis:
   #这是开始驼峰式命名规则
   configuration:
     map-underscore-to-camel-case: true
+
+
 
 eureka:
   #可以修改注册到中心的名称
@@ -61,7 +37,7 @@ eureka:
 #      defaultZone: http://r1:7001/eureka/,http://r2:7002/eureka/ #配置注册中心的地址（就是注册中心的地址）
 
 info:
-  remark: 这是一个管理系统的登录部分
+  remark: 这是一个管理系统的拆分，提供了增删改查
   author: mc
 
 ##被监控的hystrix-service服务需要开启Actuator的hystrix.stream端点
