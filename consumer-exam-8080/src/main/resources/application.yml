@@ -1,0 +1,34 @@
+#指定服务的端口号
+server:
+  port: 8080
+
+
+
+spring:
+  #    配置应用项目名(服务名称)
+  application:
+    name: consumer-exam
+  thymeleaf:
+    prefix: classpath:/templates/views/
+    #禁用缓存，以后修改静态页面的代码，就可以直接crt+F9用，不用重新部署
+    cache: false
+  jackson:
+    date-format: yyyy/MM/dd HH:mm:ss
+
+eureka:
+  #可以修改注册到中心的名称
+  instance:
+    instance-id: ${spring.application.name}-${server.port}
+  client:
+    register-with-eureka: true #开启将他注册到eureka的注册中心
+    fetch-registry: true #开启获取注册实例列表
+    service-url:
+       defaultZone: http://localhost:7001/eureka/ #配置注册中心的地址（就是注册中心的地址）
+      #这是说将两个服务提供者都注册到eureka中
+#      defaultZone: http://r1:7001/eureka/,http://r2:7002/eureka/ #配置注册中心的地址（就是注册中心的地址）
+
+feign:
+  httpclient: true
+
+
+

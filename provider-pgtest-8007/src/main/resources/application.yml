@@ -1,0 +1,72 @@
+#两个不同配置文件是操作不同的数据库
+#指定服务的端口号
+server:
+  port: 8007
+
+#数据库连接
+#先是要导入一个mysql的依赖
+
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/views/
+    #禁用缓存，以后修改静态页面的代码，就可以直接crt+F9用，不用重新部署
+    cache: false
+    #    配置应用项目名(服务名称)
+  application:
+    name: provider-pgtest
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/exam?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC&allowMultiQueries=true
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      initial-size: 5
+      min-idle: 5
+      max-active: 20
+      max-wait: 60000
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      validation-query: SELECT 1 FROM DUAL
+      test-on-borrow: false
+      test-while-idle: true
+      test-on-return: false
+      pool-prepared-statements: true
+      filter: stat,wall,log4j
+      max-pool-prepared-statement-per-connection-size: 20
+      use-global-data-source-stat: true
+      connect-properties: druid.stat.mergeSql =true;druid.stat.slowSqlMillis=5000
+
+  jackson:
+    date-format: yyyy/MM/dd HH:mm:ss
+
+
+#这是配置xml文件的路径
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  #这是开始驼峰式命名规则
+  configuration:
+    map-underscore-to-camel-case: true
+
+eureka:
+  #可以修改注册到中心的名称
+  instance:
+    instance-id: ${spring.application.name}-${server.port}
+  client:
+    register-with-eureka: true #开启将他注册到eureka的注册中心
+    fetch-registry: true #开启获取注册实例列表
+    service-url:
+       defaultZone: http://localhost:7001/eureka/ #配置注册中心的地址（就是注册中心的地址）
+      #这是说将两个服务提供者都注册到eureka中
+#      defaultZone: http://r1:7001/eureka/,http://r2:7002/eureka/ #配置注册中心的地址（就是注册中心的地址）
+
+info:
+  remark: 这是一个管理系统的登录部分
+  author: jx
+
+##被监控的hystrix-service服务需要开启Actuator的hystrix.stream端点
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: 'hystrix.stream' #暴露hystrix监控端点

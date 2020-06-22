@@ -7,22 +7,22 @@ import java.util.Date;
  * (Pgtest)实体类
  *
  * @author makejava
- * @since 2020-06-15 17:20:32
+ * @since 2020-06-19 11:56:04
  */
 public class Pgtest implements Serializable {
-    private static final long serialVersionUID = 668532436819004649L;
+    private static final long serialVersionUID = -88672932851879191L;
     /**
     * 评测ID
     */
     private Integer id;
     /**
-    * 评测结果
+    * 多选
     */
-    private String pgtestResult;
+    private Integer checkScores;
     /**
-    * 评测分数
+    * 单选分数
     */
-    private Integer pgtestScore;
+    private Integer radioScores;
     /**
     * 评测时间
     */
@@ -31,6 +31,12 @@ public class Pgtest implements Serializable {
     * 评测用户
     */
     private String userOp;
+    
+    private Integer taotiid;
+    /**
+    * 总分
+    */
+    private Integer total;
 
 
     public Integer getId() {
@@ -41,20 +47,20 @@ public class Pgtest implements Serializable {
         this.id = id;
     }
 
-    public String getPgtestResult() {
-        return pgtestResult;
+    public Integer getCheckScores() {
+        return checkScores;
     }
 
-    public void setPgtestResult(String pgtestResult) {
-        this.pgtestResult = pgtestResult;
+    public void setCheckScores(Integer checkScores) {
+        this.checkScores = checkScores;
     }
 
-    public Integer getPgtestScore() {
-        return pgtestScore;
+    public Integer getRadioScores() {
+        return radioScores;
     }
 
-    public void setPgtestScore(Integer pgtestScore) {
-        this.pgtestScore = pgtestScore;
+    public void setRadioScores(Integer radioScore) {
+        this.radioScores = radioScore;
     }
 
     public Date getPgtestTime() {
@@ -73,4 +79,32 @@ public class Pgtest implements Serializable {
         this.userOp = userOp;
     }
 
+    public Integer getTaotiid() {
+        return taotiid;
+    }
+
+    public void setTaotiid(Integer taotiid) {
+        this.taotiid = taotiid;
+    }
+
+    public Integer getTotal() {
+        return total;
+    }
+
+    public void setTotal(Integer total) {
+        this.total = total;
+    }
+
+    @Override
+    public String toString() {
+        return "Pgtest{" +
+                "id=" + id +
+                ", checkScores=" + checkScores +
+                ", radioScores=" + radioScores +
+                ", pgtestTime=" + pgtestTime +
+                ", userOp='" + userOp + '\'' +
+                ", taotiid=" + taotiid +
+                ", total=" + total +
+                '}';
+    }
 }
