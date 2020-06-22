@@ -48,8 +48,7 @@
         <easyexcel.servion>2.2.3</easyexcel.servion>
         <fastjson-version>1.2.55</fastjson-version>
         <pagehelper-version>1.2.3</pagehelper-version>
-        <druid-version>1.1.10</druid-version>
-
+        <kaptcha-version>3.3.2</kaptcha-version>
     </properties>
 
     <!--  依赖管理-->
@@ -130,14 +129,6 @@
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson-version}</version>
             </dependency>
-
-            <!--验证码框架-->
-            <dependency>
-                <groupId>com.github.penggle</groupId>
-                <artifactId>kaptcha</artifactId>
-                <version>2.3.2</version>
-            </dependency>
-
 
             <!--引入分页-->
             <dependency>

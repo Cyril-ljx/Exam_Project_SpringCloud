@@ -806,50 +806,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="exam@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="exam@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="exam@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="exam: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="exam@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="exam: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="label: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="exam@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="exam: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="pgtest: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -1033,14 +989,8 @@
     <option name="viewStates">
       <list>
         <serviceView>
-          <option name="contentProportion" value="0.22950819" />
           <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </treeState>
         </serviceView>
@@ -1139,9 +1089,38 @@
     <state x="159" y="110" width="914" height="604" key="NewModule_or_Project.wizard" timestamp="1592551268679">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="159" y="110" width="914" height="604" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1592551268679" />
-    <state x="326" y="0" key="SettingsEditor" timestamp="1592705925989">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="488" y="150" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1592536784622" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1592481452991" />
+    <state width="1058" height="263" key="GridCell.Tab.0.bottom" timestamp="1592555523368">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1058" height="263" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1592555523368" />
+    <state width="1058" height="263" key="GridCell.Tab.0.center" timestamp="1592555523368">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1058" height="263" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1592555523368" />
+    <state width="1058" height="263" key="GridCell.Tab.0.left" timestamp="1592555523368">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1058" height="263" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1592555523368" />
+    <state width="1058" height="263" key="GridCell.Tab.0.right" timestamp="1592555523368">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1058" height="263" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1592555523368" />
+    <state width="1058" height="263" key="GridCell.Tab.1.bottom" timestamp="1592555445781">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1058" height="263" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1592555445781" />
+    <state width="1058" height="263" key="GridCell.Tab.1.center" timestamp="1592555445780">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1058" height="263" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1592555445780" />
+    <state width="1058" height="263" key="GridCell.Tab.1.left" timestamp="1592555445780">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1058" height="263" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1592555445780" />
+    <state width="1058" height="263" key="GridCell.Tab.1.right" timestamp="1592555445780">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="0" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1592551340024" />
     <state x="326" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1592705925989" />

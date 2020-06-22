@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.lingnan.exam.dao.LabelDao">
+
+    <resultMap type="cn.edu.lingnan.exam.entity.Label" id="LabelMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="labelName" column="label_name" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="LabelMap">
+        select
+          id, label_name
+        from exam.label
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="LabelMap">
+        select
+          id, label_name
+        from exam.label
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="LabelMap">
+        select
+          id, label_name
+        from exam.label
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="labelName != null and labelName != ''">
+                and label_name = #{labelName}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into exam.label(label_name)
+        values (#{labelName})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update exam.label
+        <set>
+            <if test="labelName != null and labelName != ''">
+                label_name = #{labelName},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from exam.label where id = #{id}
+    </delete>
+
+    <select id="selectAll" resultMap="LabelMap">
+    select id, label_name
+    from exam.label
+  </select>
+
+</mapper>
