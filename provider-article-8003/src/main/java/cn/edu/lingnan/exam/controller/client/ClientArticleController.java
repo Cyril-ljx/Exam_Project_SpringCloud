@@ -1,4 +1,4 @@
-package cn.edu.lingnan.exam.admin.controller.client;
+package cn.edu.lingnan.exam.controller.client;
 
 import cn.edu.lingnan.exam.entity.Article;
 import cn.edu.lingnan.exam.service.ArticleService;

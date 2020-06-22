@@ -6,4 +6,5 @@ package cn.edu.lingnan.exam.controller.admin;
  * @Date: Create in 20:23 2020/6/18
  */
 public class AdminController {
+
 }

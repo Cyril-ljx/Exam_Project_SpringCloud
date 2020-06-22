@@ -1,4 +1,4 @@
-package cn.edu.lingnan.exam.service.impl;
+package cn.edu.lingnan.exam.service;
 
 import cn.edu.lingnan.exam.dao.ArticleDao;
 import cn.edu.lingnan.exam.entity.Article;

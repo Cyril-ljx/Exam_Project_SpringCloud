@@ -1,4 +1,4 @@
-package cn.edu.lingnan.exam.admin.controller.admin;
+package cn.edu.lingnan.exam.controller.admin;
 
 import cn.edu.lingnan.exam.common.LoginSession;
 import cn.edu.lingnan.exam.common.ServerLayResult;
