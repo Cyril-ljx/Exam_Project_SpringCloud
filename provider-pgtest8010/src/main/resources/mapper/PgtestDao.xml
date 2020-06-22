@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.lingnan.exam.dao.PgtestDao">
+
+    <resultMap type="cn.edu.lingnan.exam.entity.Pgtest" id="PgtestMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="taotiid" column="taotiid" jdbcType="INTEGER"/>
+        <result property="checkScores" column="check_scores" jdbcType="INTEGER"/>
+        <result property="radioScores" column="radio_scores" jdbcType="INTEGER"/>
+        <result property="total" column="total" jdbcType="INTEGER"/>
+        <result property="pgtestTime" column="pgtest_time" jdbcType="TIMESTAMP"/>
+        <result property="userOp" column="user_op" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="PgtestMap">
+        select
+         id,pgtest_time, user_op,total,check_scores,radio_scores
+        from exam.pgtest
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="PgtestMap">
+        select
+          id,pgtest_time, user_op,total,check_scores,radio_scores
+        from exam.pgtest
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="PgtestMap">
+        select id,pgtest_time, user_op,total,check_scores,radio_scores
+        from exam.pgtest
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="check_scores != null and check_scores != ''">
+                and check_scores = #{checkScores}
+            </if>
+            <if test="radio_scores != null">
+                and radio_scores = #{radioScores}
+            </if>
+            <if test="pgtestTime != null">
+                and pgtest_time = #{pgtestTime}
+            </if>
+            <if test="userOp != null and userOp != ''">
+                and user_op = #{userOp}
+            </if>
+            <if test="total != null and total != ''">
+                and total = #{total}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into exam.pgtest(check_scores, radio_scores, pgtest_time, user_op,taotiid,total)
+        values (#{checkScores}, #{radioScores}, #{pgtestTime}, #{userOp}, #{taotiid}, #{total})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update exam.pgtest
+        <set>
+            <if test="checkScores != null and checkScores != ''">
+                check_scores = #{checkScores},
+            </if>
+            <if test="radioScores != null">
+                radio_scores = #{radioScores},
+            </if>
+            <if test="total != null">
+                total = #{total},
+            </if>
+            <if test="pgtestTime != null">
+                pgtest_time = #{pgtestTime},
+            </if>
+            <if test="userOp != null and userOp != ''">
+                user_op = #{userOp},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from exam.pgtest where id = #{id}
+    </delete>
+    <select id="selectAllByKeyWord" resultMap="PgtestMap">
+        select id,pgtest_time, user_op,total,check_scores,radio_scores
+        from exam.pgtest
+        <where>
+            <if test="_parameter !=null and _parameter != '' and _parameter !='undefined' ">
+                user_op=#{keyword1}
+            </if>
+        </where>
+    </select>
+    <select id="count" resultType="int">
+      select count(*) from exam.pgtest
+    </select>
+    <select id="selectAll" resultMap="PgtestMap">
+    select id, pgtest_time, user_op,check_scores,radio_scores,total
+    from exam.pgtest
+    </select>
+    <delete id="deleteByPrimaryKey">
+    delete from exam.pgtest
+    where id = #{id}
+    </delete>
+</mapper>

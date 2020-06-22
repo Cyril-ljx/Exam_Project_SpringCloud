@@ -1,5 +1,11 @@
 package cn.edu.lingnan.exam.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+import lombok.experimental.Accessors;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -9,68 +15,38 @@ import java.util.Date;
  * @author makejava
  * @since 2020-06-15 17:20:32
  */
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Accessors(chain = true)
+@ToString
 public class Pgtest implements Serializable {
     private static final long serialVersionUID = 668532436819004649L;
-    /**
-    * 评测ID
-    */
     private Integer id;
     /**
-    * 评测结果
-    */
-    private String pgtestResult;
+     * 多选
+     */
+    private Integer checkScores;
     /**
-    * 评测分数
-    */
-    private Integer pgtestScore;
+     * 单选分数
+     */
+    private Integer radioScores;
     /**
-    * 评测时间
-    */
+     * 评测时间
+     */
     private Date pgtestTime;
     /**
-    * 评测用户
-    */
+     * 评测用户
+     */
     private String userOp;
 
+    private Integer taotiid;
+    /**
+     * 总分
+     */
+    private Integer total;
 
-    public Integer getId() {
-        return id;
-    }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getPgtestResult() {
-        return pgtestResult;
-    }
-
-    public void setPgtestResult(String pgtestResult) {
-        this.pgtestResult = pgtestResult;
-    }
-
-    public Integer getPgtestScore() {
-        return pgtestScore;
-    }
-
-    public void setPgtestScore(Integer pgtestScore) {
-        this.pgtestScore = pgtestScore;
-    }
-
-    public Date getPgtestTime() {
-        return pgtestTime;
-    }
-
-    public void setPgtestTime(Date pgtestTime) {
-        this.pgtestTime = pgtestTime;
-    }
-
-    public String getUserOp() {
-        return userOp;
-    }
-
-    public void setUserOp(String userOp) {
-        this.userOp = userOp;
-    }
 
 }
